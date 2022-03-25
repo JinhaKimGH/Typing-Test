@@ -92,7 +92,7 @@ class Typing:
 
         input_length = len(self.correct)
 
-        position = (settings.screen_w//2) - (len(settings.words) * cs.FSIZE//2)//2
+        position = 15
         height = settings.screen_h/2
 
         wrong_counter = 0
@@ -119,7 +119,7 @@ class Typing:
             position += 15
 
             if position >= settings.screen_w - 15:
-                position = (settings.screen_w//2) - (len(settings.words) * cs.FSIZE//2)//2
+                position = 15
                 height += 30
 
         for i in range(input_length, len(settings.words)):
@@ -129,7 +129,7 @@ class Typing:
             position += 15
 
             if position >= settings.screen_w - 15:
-                position = (settings.screen_w//2) - (len(settings.words) * cs.FSIZE//2)//2
+                position = 15
                 height += 30
 
         wpm_text = font.render("WPM: "+str(self.wpm), True, cs.WHITE)
