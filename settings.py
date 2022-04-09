@@ -1,22 +1,33 @@
-from constants import *
-from typing import *
 import pygame
 
-#Words to type
-words = "Hello world, I am here today to present to you"
+# Words to type
+words = "Custom Sentence to Test. Hello World."
 
-#Screen Dimensions
+# Screen Dimensions
 screen_w = 600
 
 screen_h = 600
 
-#Title
+# Title
 title = "Typing Test"
 
 screen = pygame.display.set_mode((screen_w, screen_h))
 
 pygame.display.set_caption(title)
 
-#Font
+# Font
 font_type = 'prestigeelitestdbd'
 
+# Colors
+
+RED = (255, 71, 71)
+
+GREEN = (114, 255, 71)
+
+BLACK = (0, 0, 0)
+
+WHITE = (255, 255, 255)
+
+# Font Size
+
+FSIZE = 25
